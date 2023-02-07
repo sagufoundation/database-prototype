@@ -17,12 +17,16 @@
 
 </head>
 
-<body class="bg-dark">
+<body class="bg-light">
 
     <div class="container-fluid">
         <nav class="p-lg-5">
             <a href="./admin-dashboard.html" class="link-light btn btn-primary">DASHBOARD</a>
-            <a href="./admin-student.html" class="link-light btn btn-primary">STUDENTS</a>
+            <a href="./admin-student.html" class="link-light btn btn-success"><i class="fa-solid fa-users me-1"></i> STUDENTS</a>
+            <a href="./admin-statistics.html" class="link-light btn btn-primary"><i class="fa-solid fa-folder me-1"></i> DOCUMENTS</a>
+            <a href="./admin-statistics.html" class="link-light btn btn-primary"><i class="fa-solid fa-folder me-1"></i> STATISTICS</a>
+
+            <a href="./index.html" class="btn btn-outline-primary float-end"><i class="fa-solid fa-sign-out me-1"></i> LOG OUT</a>
         </nav>
     </div>
     <!-- .container end -->
@@ -30,7 +34,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 p-lg-5">
-                <div class="card">
+                <div class="card shadow">
                     <div class="card-body">
                         <div class="row mb-3">
 
@@ -39,20 +43,30 @@
                                 <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur optio, quidem, placeat iste vero rem maxime beatae fugit voluptate provident quam est consequatur ea numquam quae odio dolores aperiam sequi.</p>
                             </div>
 
+                            <div class="col-lg-2 text-end">
+                                <a href="admin-student.html" class="btn btn-sm btn-outline-dark"><i class="fa-solid fa-times-rectangle me-1"></i> Close</a>
+                            </div>
+
                         </div>
 
                         <div class="row">
 
                             <div class="col-lg-2 mb-5">
-                                <img src="./assets/images/photos/1.png" alt="Profile Picture" class="img-thumbnail w-100 mb-lg-3">
+
+                                <h3 class="fw-bold">Picture</h3>    
+
+                                <img src="./assets/images/photos/1.png" alt="Profile Picture" class="img-thumbnail w-100 mb-lg-3 p-lg-5">
+
                                 <div>
                                     <a href="#" class="btn btn-sm btn-link-dark w-100" title="Update Picture"><i class="fa-solid fa-edit"></i> Update Picture</a>
                                 </div>
+                                
                             </div>
 
+
                             <div class="col-lg-5 mb-5">
-                                <h3>Bio</h3>
-                                
+
+                                <h3 class="fw-bold">Bio</h3>
                                 
                                 <ul class="list-group">
                                     <li class="list-group-item">
@@ -72,7 +86,9 @@
 
                             </div>
                             <div class="col-lg-5" mb-5>
-                                <h3>Documents</h3>
+
+                                <h3 class="fw-bold">Documents</h3>
+
                                 <ul class="list-group">
                                     <li class="list-group-item d-flex justify-content-between">
                                         Sponsor letter 
